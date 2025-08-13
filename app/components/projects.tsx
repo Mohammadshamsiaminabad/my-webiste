@@ -83,24 +83,25 @@ function Projects(props: ProjectsProps) {
 }
 
 function GameProjects(props: {data: projectProps[], delay: number}) {
+  const { data, delay } = props;
   const pageRef = useRef<number>(0);
   const gameProjectContainer = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setTimeout(() => {
-        const nextPage = pageRef.current < props.data.length - 2 ? pageRef.current + 1: 0;
+        const nextPage = pageRef.current < data.length - 2 ? pageRef.current + 1: 0;
         pageRef.current = nextPage;
         gameProjectContainer.current?.scrollTo({
           left: -nextPage * gameProjectContainer.current.clientWidth / 2,
           top: 0,
           behavior: "smooth",
         });
-      }, props.delay);
+      }, delay);
     }, 5000);
 
     return () => clearInterval(interval);
-  }, [props.data.length]);
+  }, [data.length]);
 
   return (
     <div ref={gameProjectContainer} className="game-project-container">
