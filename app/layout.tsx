@@ -1,19 +1,27 @@
-"use client";
 // fonts
 import { Baloo_Bhaijaan_2 } from "next/font/google";
-// main stylesheet
 import "./globals.css";
-// layout components
-import HeaderLayout from "./layout-h";
-import FooterLayout from "./layout-f";
-
+import LayoutWrapper from "./layout-wrapper";
 const baloo_Bhaijaan_2 = Baloo_Bhaijaan_2({
   subsets: ['latin'],
   weight: ["400", "800"],
 });
 
+export const metadata = {
+  title: "محمد شمسی",
+  description: "طراحی و ساخت بهترین وبسایت ها",
+  keywords: ["nextjs", "tutorial", "project"],
+  authors: [{ name: "نام شما", url: "https://mohammad-shamsi-dev.ir" }],
+  themeColor: "#ffffff",
+  icons: {
+    icon: "/favicon.png",              // برای favicon معمولی
+    shortcut: "/favicon.png",    // برای shortcut icon
+    apple: "/favicon.png",    // برای دستگاه‌های iOS
+  },
+};
+
 export default function RootLayout({ children }: Readonly<{children: React.ReactNode;}>) {
-  
+
   return (
     <html lang="en" className={baloo_Bhaijaan_2.className}>
       <head>
@@ -23,12 +31,10 @@ export default function RootLayout({ children }: Readonly<{children: React.React
           integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
           crossOrigin="anonymous"
           referrerPolicy="no-referrer" />
-        
+        <link rel="apple-touch-icon" href="/me.jpg" />
       </head>
       <body>
-        <HeaderLayout />
-        {children}
-        <FooterLayout />
+        <LayoutWrapper>{children}</LayoutWrapper>
       </body>
     </html>
   );

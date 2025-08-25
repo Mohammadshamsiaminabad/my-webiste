@@ -2,6 +2,10 @@
 @import "styles/main.css";
 @import "styles/footer.css";
 
+/* projects styles */
+@import "./projects/example/shop-web/styles/header.css";
+@import "./projects/example/shop-web/styles/main.css";
+
 :root {
   --background: #ffffff;
   --foreground: hsl(0, 0%, 9%);
