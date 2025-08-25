@@ -7,10 +7,10 @@ import OTBInput from "../components/OTPInput";
 import { useMainContext } from "../mainContext";
 // apollo client
 import { useMutation } from "@apollo/client";
-import { AUTHORIZATION } from "../lib/apollo-client";
+// import { AUTHORIZATION } from "../lib/apollo-client";
 
 export default function RegisterAuthoriazation() {
-  const [authorization, { data, loading, error }] = useMutation(AUTHORIZATION);
+  // const [authorization, { data, loading, error }] = useMutation(AUTHORIZATION);
   const { email } = useMainContext();
   const [send, setSend] = useState(false);
 
