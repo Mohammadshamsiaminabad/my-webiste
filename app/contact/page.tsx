@@ -6,26 +6,26 @@ import { useState } from "react";
 import InputBox from "../components/InputBox";
 
 // client server
-import { useMutation } from "@apollo/client";
-import { SEND_EMAIL } from "../lib/apollo-client";
+// import { useMutation } from "@apollo/client";
+// import { SEND_EMAIL } from "../lib/apollo-client";
 
 export default function Contact() {
-  const [sendEmail, { data, loading, error }] = useMutation(SEND_EMAIL);
+  // const [sendEmail, { data, loading, error }] = useMutation(SEND_EMAIL);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
 
   const handleSendEmail = async () => {
-    setName("");
-    setEmail("");
-    setSubject("");
-    setMessage("");
-    try {
-      await sendEmail({ variables: { from: email, subject, text: `نام: ${name}\nایمیل: ${email}\n${message}` }});
-    } catch (err) {
-      console.error(err);
-    }
+    // setName("");
+    // setEmail("");
+    // setSubject("");
+    // setMessage("");
+    // try {
+    //   await sendEmail({ variables: { from: email, subject, text: `نام: ${name}\nایمیل: ${email}\n${message}` }});
+    // } catch (err) {
+    //   console.error(err);
+    // }
   };
 
   return (
