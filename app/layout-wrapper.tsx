@@ -3,7 +3,7 @@ import { usePathname } from "next/navigation";
 import { MainContextProvider } from "./mainContext";
 import FooterLayout from "./layout-f";
 import HeaderLayout from "./layout-h";
-import Providers from "./providers";
+// import Providers from "./providers";
 import { useEffect } from "react";
 
 export default function LayoutWrapper({ children }: { children: React.ReactNode }) {
@@ -13,7 +13,7 @@ export default function LayoutWrapper({ children }: { children: React.ReactNode 
   }, []);
   const MainCondition = (pathname !== "/register-authorization" && !pathname.startsWith("/projects/example"));
   return (
-    <Providers>
+    <>
       <MainContextProvider>
         {MainCondition ?  (
           <>
@@ -27,7 +27,7 @@ export default function LayoutWrapper({ children }: { children: React.ReactNode 
           </>
         )}
       </MainContextProvider>
-    </Providers>
+    </>
 
   )
 }
