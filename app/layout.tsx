@@ -17,6 +17,9 @@ export const metadata = {
     shortcut: "/favicon.png",    // برای shortcut icon
     apple: "/favicon.png",    // برای دستگاه‌های iOS
   },
+  verification: {
+    google: "0ZSBF3q8VPlCUwAYLAHlROqoY9BfgXY1KmX3yFl7MWw"  // فقط مقدار content رو بذار
+  },
 };
 
 export default function RootLayout({ children }: Readonly<{children: React.ReactNode;}>) {

@@ -16,7 +16,6 @@
 .clothes-category-box {
   position: relative;
   flex-basis: calc(50% - 10px);
-  width: 200px;
   padding: 10px;
   border-radius: 5px;
   overflow: hidden;
@@ -159,14 +158,30 @@
 
 @media (min-width: 768px) {
   .responsive-container {
-    align-items: start;
     text-align: left;
     flex-direction: row;
     margin-inline: auto;
+    height: 300px;
+  }
+
+  .clothes-category-container {
+    height: 300px;
+  }
+
+  .clothes-category-box {
+    height: 140px;
   }
 
   .discount-commudity-container {
     max-width: 60%;
     height: 300px;
+  }
+
+  .discount-container {
+    height: 260px;
+  }
+  .discount-container .clothes-box {
+    aspect-ratio: 1 / 2;
+    height: 100%;
   }
 }
