@@ -1,11 +1,11 @@
 // fonts
-// import { Baloo_Bhaijaan_2 } from "next/font/google";
+import { Baloo_Bhaijaan_2 } from "next/font/google";
 import "./globals.css";
 import LayoutWrapper from "./layout-wrapper";
-// const baloo_Bhaijaan_2 = Baloo_Bhaijaan_2({
-//   subsets: ['latin'],
-//   weight: ["400", "800"],
-// });
+const baloo_Bhaijaan_2 = Baloo_Bhaijaan_2({
+  subsets: ['latin'],
+  weight: ["400", "800"],
+});
 
 export const metadata = {
   title: "محمد شمسی",
@@ -22,7 +22,7 @@ export const metadata = {
 export default function RootLayout({ children }: Readonly<{children: React.ReactNode;}>) {
 
   return (
-    <html lang="en">
+    <html lang="en" className={baloo_Bhaijaan_2.className}>
       <head>
         <link 
           rel="stylesheet"
