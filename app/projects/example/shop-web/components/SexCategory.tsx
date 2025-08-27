@@ -43,7 +43,6 @@ const categories: SexCategoryType[] = [
 ]
 
 export default function SexCategory() {
-
   return (
     <div className="clothes-category-container">
       {categories.map((category, index) => (

@@ -1,50 +1,58 @@
 import Image from "next/image"
 import SexCategory from "./components/SexCategory"
+import DiscountContainer from "./components/DiscountContainer"
 
 export default function ShopWeb() {
   return (
-    <main style={{ marginTop: "80px" }}>
+    <main style={{ marginTop: "80px", textAlign: "left" }}>
       <h1 className="res-text">Buy something cheap and good quality.</h1>
-      <p><strong className="res-text">category</strong></p>
-      <SexCategory />
-      <section aria-label="discount clothes" className="discount-commudity-container">
-        <h2>&quot;Discount Clothes 50%&quot;</h2>
-        <div className="discount-container">
-          <article className="discount-commudity-box">
-            <h3>men's pants</h3>
-            <p className="price"><del>300$</del> 150$</p>
-            <span className="view">100 <i className="fa-solid fa-eye"></i></span>
-            <span className="score"><i className="fa-solid fa-star"></i> 4.3</span>
-            <Image width={200} height={200} src="/man.jpg" alt="s;l" />
+      <p className="res-text"><strong>category</strong></p>
+      <div className="responsive-container">
+        <SexCategory />
+        <DiscountContainer />
+      </div>
 
-          </article>
-          <article className="discount-commudity-box">
-            <h3>men's pants</h3>
-            <p className="price"><del>300$</del> 150$</p>
-            <span className="view">100 <i className="fa-solid fa-eye"></i></span>
-            <span className="score"><i className="fa-solid fa-star"></i> 4.3</span>
-            <Image width={200} height={200} src="/man.jpg" alt="s;l" />
-
-          </article>
-          <article className="discount-commudity-box">
-            <h3>men's pants</h3>
-            <p className="price"><del>300$</del> 150$</p>
-            <span className="view">100 <i className="fa-solid fa-eye"></i></span>
-            <span className="score"><i className="fa-solid fa-star"></i> 4.3</span>
-            <Image width={200} height={200} src="/man.jpg" alt="s;l" />
-
-          </article>
-          <article className="discount-commudity-box">
-            <h3>men's pants</h3>
-            <p className="price"><del>300$</del> 150$</p>
-            <span className="view">100 <i className="fa-solid fa-eye"></i></span>
-            <span className="score"><i className="fa-solid fa-star"></i> 4.3</span>
-            <Image width={200} height={200} src="/man.jpg" alt="s;l" />
-
-          </article>
+      <div className="top-clothes">
+        <h2></h2>
+        <div className="top-clothes-container">
+          <div className="clothes-box">
+            <h4>women&lsquo;s clothes</h4>
+            <p className="price">97$</p>
+            <span className="view">123<i className="fa-solid fa-eye"></i></span>
+            <span className="score"><i className="fa-solid fa-star"></i> 4.6</span>
+            <Image width={200} height={200} alt="clothes" src="/women's-clothes.jpg" />
+          </div>
+          <div className="clothes-box" style={{ animationDelay: "250ms" }}>
+            <h4>men&lsquo;s clothes</h4>
+            <p className="price">97$</p>
+            <span className="view">123<i className="fa-solid fa-eye"></i></span>
+            <span className="score"><i className="fa-solid fa-star"></i> 4.6</span>
+            <Image width={200} height={200} alt="clothes" src="/men's-clothes.avif" />
+          </div>
+          <div className="clothes-box" style={{ animationDelay: "500ms" }}>
+            <h4>women&lsquo;s clothes</h4>
+            <p className="price">97$</p>
+            <span className="view">123<i className="fa-solid fa-eye"></i></span>
+            <span className="score"><i className="fa-solid fa-star"></i> 4.6</span>
+            <Image width={200} height={200} alt="clothes" src="/men's-suit.jpg" />
+          </div>
+          <div className="clothes-box" style={{ animationDelay: "750ms" }}>
+            <h4>women&lsquo;s clothes</h4>
+            <p className="price">97$</p>
+            <span className="view">123<i className="fa-solid fa-eye"></i></span>
+            <span className="score"><i className="fa-solid fa-star"></i> 4.6</span>
+            <Image width={200} height={200} alt="clothes" src="/men's-shoes.jpg" />
+          </div>
+          <div className="clothes-box" style={{ animationDelay: "1000ms" }}>
+            <h4>women&lsquo;s clothes</h4>
+            <p className="price">97$</p>
+            <span className="view">123<i className="fa-solid fa-eye"></i></span>
+            <span className="score"><i className="fa-solid fa-star"></i> 4.6</span>
+            <Image width={200} height={200} alt="clothes" src="/women's-shoes.jpg" />
+          </div>
         </div>
 
-      </section>
+      </div>
     </main>
   )
 }

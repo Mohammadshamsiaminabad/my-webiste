@@ -8,9 +8,7 @@ import { useEffect } from "react";
 
 export default function LayoutWrapper({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
-  useEffect(() => {
-    console.log(pathname);
-  }, []);
+
   const MainCondition = (pathname !== "/register-authorization" && !pathname.startsWith("/projects/example"));
   return (
     <>

@@ -34,7 +34,7 @@ export default function LayoutHeader() {
   }, [openMenuAnimation]);
 
   return (
-    <header>
+    <header style={{ backgroundColor: "#fff" ,width: "100%" }}>
       <nav className="s-header-nav">
         <div style={{ display: "flex", alignItems: "center" }}>
           <button onClick={handleOpenMenu}><i className="fa-solid fa-bars"></i></button>

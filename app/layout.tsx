@@ -1,18 +1,17 @@
 // fonts
-import { Baloo_Bhaijaan_2 } from "next/font/google";
+// import { Baloo_Bhaijaan_2 } from "next/font/google";
 import "./globals.css";
 import LayoutWrapper from "./layout-wrapper";
-const baloo_Bhaijaan_2 = Baloo_Bhaijaan_2({
-  subsets: ['latin'],
-  weight: ["400", "800"],
-});
+// const baloo_Bhaijaan_2 = Baloo_Bhaijaan_2({
+//   subsets: ['latin'],
+//   weight: ["400", "800"],
+// });
 
 export const metadata = {
   title: "محمد شمسی",
   description: "طراحی و ساخت بهترین وبسایت ها",
   keywords: ["nextjs", "tutorial", "project"],
   authors: [{ name: "نام شما", url: "https://mohammad-shamsi-dev.ir" }],
-  themeColor: "#ffffff",
   icons: {
     icon: "/favicon.png",              // برای favicon معمولی
     shortcut: "/favicon.png",    // برای shortcut icon
@@ -23,7 +22,7 @@ export const metadata = {
 export default function RootLayout({ children }: Readonly<{children: React.ReactNode;}>) {
 
   return (
-    <html lang="en" className={baloo_Bhaijaan_2.className}>
+    <html lang="en">
       <head>
         <link 
           rel="stylesheet"

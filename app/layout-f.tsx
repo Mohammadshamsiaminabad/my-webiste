@@ -1,38 +1,13 @@
 "use client";
-// React States
-import { useState } from "react";
-// Next JS
 import Image from "next/image";
-import { useRouter } from "next/navigation";
-// my components
 import FooterContainers from "./components/FooterContainers";
-// mainContext
 import { useMainContext } from "./mainContext";
-// apollo client
-// import { useMutation } from "@apollo/client";
-// import { REGISTER } from "./lib/apollo-client";
 
 export default function FooterLayout() {
-  // const [register, { data, loading, error }] = useMutation(REGISTER);
   const { email, setEmail } = useMainContext();
-  const router = useRouter();
 
   const handleAuthorization = async () => {
-    // try {
-    //   if (!email.trim()) {
-    //     return;
-    //   }
-    //   const result = await register({ variables: { email } });
-    //   const res = result.data.register;
-    //   if (res.code === 500) {
-    //     throw new Error(res.message);
-    //   }
-    //   router.push("/register-authorization");
-    // } catch (err) {
-    //   console.error(err);
-    //   alert(err);
-    // }
-
+    console.log("hello");
   };
 
   return (

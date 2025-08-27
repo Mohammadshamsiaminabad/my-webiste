@@ -6,7 +6,7 @@ import OTBInput from "../components/OTPInput";
 // main context
 import { useMainContext } from "../mainContext";
 // apollo client
-import { useMutation } from "@apollo/client";
+// import { useMutation } from "@apollo/client";
 // import { AUTHORIZATION } from "../lib/apollo-client";
 
 export default function RegisterAuthoriazation() {
@@ -15,12 +15,12 @@ export default function RegisterAuthoriazation() {
   const [send, setSend] = useState(false);
 
 
-  const handleSend = async (otp: string) => {
+  const handleSend = async () => {
     try {
       setSend(true);
       console.log(email);
       // await authorization({ variables: { email, code: otp } });
-    } catch (err: any) {
+    } catch (err) {
       console.error("server internal error\n", err);
       alert(err);
     }

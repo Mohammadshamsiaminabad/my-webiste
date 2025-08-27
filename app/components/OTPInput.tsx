@@ -55,7 +55,7 @@ export default function OTBInput({ length = 6, onComplete }: OTPInputProps) {
           value={values[index]}
           onChange={(e) => handleChange(e, index)}
           onKeyDown={(e) => handleKeyDown(e, index)}
-          onClick={(e) => {
+          onClick={() => {
             inputRefs.current[count]?.focus();
           }}
 

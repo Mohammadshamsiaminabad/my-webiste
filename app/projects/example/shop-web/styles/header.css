@@ -1,6 +1,7 @@
 .s-header-nav {
   position: fixed;
   width: 100%;
+  max-width: var(--max-width);
   background-color: var(--normalize-box);
   display: flex;
   justify-content: space-between;
@@ -49,5 +50,12 @@
 
   100% {
     left: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .s-header-nav {
+    left: 50%;
+    transform: translateX(-50%);
   }
 }

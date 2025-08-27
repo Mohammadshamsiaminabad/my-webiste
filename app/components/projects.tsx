@@ -42,7 +42,7 @@ function Projects(props: ProjectsProps) {
     }, 5000);
 
     return () => clearInterval(interval);
-  }, [projects.length]);
+  }, [projects.length, delay]);
 
  
   return (
@@ -103,7 +103,7 @@ function GameProjects(props: {data: projectProps[], delay: number}) {
     }, 5000);
 
     return () => clearInterval(interval);
-  }, [data.length]);
+  }, [data.length, delay]);
 
   return (
     <div ref={gameProjectContainer} className="game-project-container">
