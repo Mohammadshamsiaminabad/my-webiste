@@ -6,7 +6,6 @@ import Head from "next/head";
 // my Components
 import Services from "./components/services";
 
-
 export default function Home() {
   return (
     <>

@@ -1,8 +1,8 @@
 import ProjectContainer from "../components/projects";
 
 export const metadata = {
-  title: "لیست پروژه های من",
-  description: "لیست پروژه های من",
+  title: "لیست پروژه های محمد شمسی",
+  description: "مشاهده نمونه‌کارها و پروژه‌های من در حوزه توسعه وب با Next.js، React.js، بک‌اند و API. تجربه واقعی از طراحی و پیاده‌سازی."
 };
 
 export default function Projects() {
