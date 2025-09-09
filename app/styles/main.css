@@ -227,8 +227,9 @@
 /* contact page stylesheet  */
 .contact-container {
   display: flex;
+  gap: 10px;
   flex-direction: column;
-  margin-top: 100px;
+  margin-top: 50px;
   max-width: var(--max-width);
   margin-inline: auto;
 }
@@ -408,6 +409,12 @@
   /* contact page */
   .contact-container {
     flex-direction: row;
+    gap: 40px;
+  }
+
+  .contact-container .container-1 ,
+  .contact-container .container-2 {
+    margin: 0;
   }
 
 }

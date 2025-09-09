@@ -1,4 +1,4 @@
-import ClientContactComponent from "./ClientContactComponent";
+import ClientContact from "./ClientContact";
 
 export const metadata = {
   title: "درباره ما",
@@ -8,7 +8,7 @@ export const metadata = {
 export default function Contact() {
   return (
     <main>
-      <h1>در باره ما</h1>
+      <ClientContact />
     </main>
 
   )

@@ -46,7 +46,7 @@ export default function DiscountContainer() {
   const { precent, components } = DiscountContainerList;
 
   return (
-    <div className="discount-commudity-container">
+    <div className="discount-commudity-container responsive-box">
       <h3>&quot;Discount Clothes {precent}%&quot;</h3>
       <div className="discount-container">
         {components.map((component, index) => (

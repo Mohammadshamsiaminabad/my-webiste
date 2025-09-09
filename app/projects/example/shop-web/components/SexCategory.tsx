@@ -44,7 +44,7 @@ const categories: SexCategoryType[] = [
 
 export default function SexCategory() {
   return (
-    <div className="clothes-category-container">
+    <div className="clothes-category-container responsive-box">
       {categories.map((category, index) => (
         <section className="clothes-category-box" key={index}>
           <h3>{category.sex}</h3>

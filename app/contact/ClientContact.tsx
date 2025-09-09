@@ -2,7 +2,7 @@
 import { useState } from "react";
 import InputBox from "../components/InputBox";
 
-export default function ClientContactComponent() {
+export default function ClientContact() {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [subject, setSubject] = useState("");
